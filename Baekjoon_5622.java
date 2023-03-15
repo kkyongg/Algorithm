@@ -16,10 +16,12 @@ public class Baekjoon_5622 {
         for (int j = 0; j < num.length(); j++) {
             char a = num.charAt(j);
 
-            if (String.valueOf(a).equals("A") || String.valueOf(a).equals("B") || String.valueOf(a).equals("C")) {
+            if (String.valueOf(a).equals("A") || String.valueOf(a).equals("B") || String.valueOf(a).equals("C")) { // if (a == 'A' || a == 'B' || a == 'C')도 가능
                 sum += 3;
 
             }
+		
+               
             if (String.valueOf(a).equals("D") || String.valueOf(a).equals("E") || String.valueOf(a).equals("F")) {
                 sum += 4;
 
