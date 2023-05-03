@@ -1,14 +1,13 @@
 package baekjoon.Programmers;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class Programmers_문자열내p와y의개수 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String s = bufferedReader.readLine().toLowerCase();
+    public static void main(String[] args) {
+        boolean result = Solution("pPoooyY");
+        System.out.println(result);
+    }
 
+    public static boolean Solution(String s) {
+        boolean answer = true;
         int p_count = 0;
         int y_count = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -22,9 +21,10 @@ public class Programmers_문자열내p와y의개수 {
             }
         }
         if (p_count == y_count) {
-            System.out.println("True");
+            answer = true;
         } else {
-            System.out.println("False");
+            answer = false;
         }
+        return answer;
     }
 }
