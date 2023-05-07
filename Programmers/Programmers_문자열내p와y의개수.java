@@ -1,4 +1,4 @@
-package baekjoon.Programmers;
+package Programmers;
 
 public class Programmers_문자열내p와y의개수 {
     public static void main(String[] args) {
