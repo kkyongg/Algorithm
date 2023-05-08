@@ -3,7 +3,7 @@ package SWEA;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class SWEA_7236_저수지의물의총깊이구하기 {
+public class Solution_7236_저수지의물의총깊이구하기 {
     static String[][] square;
     static int N;
     static int[] dr = {-1, 0, 1, 0, -1, 1, 1, -1};
