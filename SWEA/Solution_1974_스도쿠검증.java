@@ -79,18 +79,15 @@ class Solution_1974_스도쿠검증 {
 
                 for (int sr = i; sr < r; sr++) { // 3x3씩 확인
                     for (int sc = j; sc < c; sc++) {
-                        square[sudoku[sr][sc] - 1]++; //숫자가 1부터 9까지니까 -1 해줌
+                        square[sudoku[sr][sc] - 1]= sudoku[sr][sc]; //숫자가 1부터 9까지니까 -1 해줌
                     }
                 }
                 for (int k = 0; k < 9; k++) {
-                    if (square[k] == 0) {
-                        suqare_answer = false;
-                        break;
-                    }
+                    suqare_answer = checkLine(square);
                 }
             }
+            if(!suqare_answer) break;
         }
-
         return suqare_answer;
     }
 }
