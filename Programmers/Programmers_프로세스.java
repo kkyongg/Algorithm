@@ -4,8 +4,10 @@ import java.util.*;
 
 public class Programmers_프로세스 {
     public static void main(String[] args) {
+
         System.out.println(solution(new int[]{2, 1, 3, 2}, 2));
         System.out.println(solution(new int[]{1, 1, 9, 1, 1, 1}, 0));
+        
     }
 
     public static int solution(int[] priorities, int location) {
